@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main
+{
+public static void main(Stringagrs[])
+{
+Scanner inp = new Scanner(System.in);
+int count = 0;
+ String str = inp.nextLine();
+char char_array[]= new char[str.length()];
+int len = str.length();
+
+for(int i=0;i<len;i++)
+char_array[i]=str.charAt(i);
+
+for(int i=0;i<len;i++)
+{
+if(ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u'||ch[i]=='A'||ch[i]=='E'||ch[i]=='I'||ch[i]=='O'||ch[i]=='U')
+count++;
+}
+for(int i = len-1;i>=0;i--)
+System.out.print(ch[i]);
+
+System.out.println();
+System.out.println("Number of vowels "+ count);
+}
+}
